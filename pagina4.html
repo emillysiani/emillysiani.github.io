@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina1.html">Quem sou eu?</a></li>
+                <li><a href="pagina2.html">Formação Profissional</a></li>
+                <li><a href="pagina3.html">Portifólio</a></li>
+                <li><a href="pagina4.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2> Deseja entrar em contato? </h2> <!-- Página 4 - Contato, caixas de preenchimento e botão de envio -->
+        <p> <br> Emilly Siani Machado | Telefone: (43)99988-5478 | Email: msianiemilly@outlook.com </br>
+            <br> Ou deixe seu contato abaixo: </br>
+            <br> <form onsubmit="alert('Este botão é fictício e não envia dados.'); return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" pattern="[0-9]{10,11}" inputmode="numeric" required>
+        
+                <label for="mensagem">Deixe sua mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem" required></textarea>
+        
+                <input type="submit" value="Enviar">
+        
+                <p class="ficticio">* Botão de enviar não envia dados.</p>
+            </form></br>
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Emilly</p>
+    </footer>
+</body>
+</html>
